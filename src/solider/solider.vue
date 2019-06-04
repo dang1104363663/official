@@ -1,6 +1,7 @@
 <template>
     <div class="solider" @click="add()">
           <div>1111</div>
+      <div>1111</div>
     </div>
 </template>
 
