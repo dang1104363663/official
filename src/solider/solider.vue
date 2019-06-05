@@ -1,6 +1,6 @@
 <template>
     <div class="solider" >
-
+1111111
     </div>
 </template>
 
