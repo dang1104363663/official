@@ -1,159 +1,159 @@
 <template>
-   <div class="the_whole_page">
-     <div class="the_card">
-       <el-card class="box-card_01">
-         <div slot="header" class="clearfix_01">
-           <span style="font-size: 15px;color: grey"><b>爱情宣言:</b>如我有三个糖。分伱两颗。一颗留着等伱心情不好的时候开给伱吃.</span>
-            <!--喜欢并发私信按钮-->
-           <el-tooltip content="点击喜欢发私信" placement="top">
-           <el-button style="float: right;padding: 3px 0" type="text">
-             <a href = "javascript:void(0)" onclick = "document.getElementById('light_01').style.display='block'"><i class="icon iconfont icon-fenzu"></i></a>
-           </el-button>
-           </el-tooltip>
-           <!--悬停显示点赞-->
-           <div class="zan">
-             <el-tooltip content="点赞" placement="top">
-               <div class="likeIcon-wrap">
-                 <div class="like-icon" data-key="on"></div>
-                 <div class="like-num">0</div>
-               </div>
-             </el-tooltip>
-           </div>
-           <!--浏览量-->
-           <div class="the_view"><li class="views"><i class="icon iconfont icon-liulanliang-"></i><i class="viewCount"></i> views</li></div>
-         </div>
+  <div class="the_whole_page">
+    <div class="the_card">
+      <el-card class="box-card_01">
+        <div slot="header" class="clearfix_01">
+          <span style="font-size: 15px;color: grey"><b>爱情宣言:</b>如我有三个糖。分伱两颗。一颗留着等伱心情不好的时候开给伱吃.</span>
+          <!--喜欢并发私信按钮-->
+          <el-tooltip content="点击喜欢发私信" placement="top">
+            <el-button style="float: right;padding: 3px 0" type="text">
+              <a href = "javascript:void(0)" onclick = "document.getElementById('light_01').style.display='block'"><i class="icon iconfont icon-fenzu"></i></a>
+            </el-button>
+          </el-tooltip>
+          <!--悬停显示点赞-->
+          <div class="zan">
+            <el-tooltip content="点赞" placement="top">
+              <div class="likeIcon-wrap">
+                <div class="like-icon" data-key="on"></div>
+                <div class="like-num">0</div>
+              </div>
+            </el-tooltip>
+          </div>
+          <!--浏览量-->
+          <div class="the_view"><li class="views"><i class="icon iconfont icon-liulanliang-"></i><i class="viewCount"></i> views</li></div>
+        </div>
 
-         <div v-for="o in 1" :key="o" class="text item">
-           <!--{{'列表内容 '+o}}-->
-         </div>
-       </el-card>
-     </div>
-     <div class="the_photo">
-       <img src="https://photo.zastatic.com/images/photo/376360/1505438644/5549583712300493.png?scrop=1&crop=1&cpos=north&w=200&h=200">
-     </div>
-     <div class="the_header">
-       <div class="the_name" id="app" style="color: purple">
-         <strong>
-           Coco
-         </strong>
-       </div>
-       <div class="info_simple" style="color: purple">
-         18岁|汉族|东北石油大学|本科|月入3000
-       </div>
-     </div>
-     <div class="the_body">
-       <el-card class="box-card_02">
-         <div class="self_information">
-            个人资料
-           <el-tag class="_1">未婚</el-tag>
-           <el-tag type="success" class="_2">18岁</el-tag>
-           <el-tag type="info" class="_3">天蝎座</el-tag>
-           <el-tag type="warning" class="_4">161cm</el-tag>
-           <el-tag type="danger" class="_5">工作地:湛江遂溪县</el-tag>
-           <el-tag type="info" class="_6">没有小孩</el-tag>
-           <el-tag type="warning" class="_7">体型:一般</el-tag>
-           <el-tag type="danger" class="_8">籍贯:广东湛江</el-tag>
-         </div>
-         <div class="like_do clear">
-           兴趣爱好
-         </div>
-           <div style="color: grey" class="_111">喜欢的美食:山竹&nbsp&nbsp</div>
-           <div style="color: grey" class="_222">喜欢做的事:和喜欢的人在一起 &nbsp&nbsp</div>
-           <div style="color: grey" class="_333">难忘的电影:星际迷航&nbsp&nbsp</div>
-           <div style="color: grey" class="_444">喜欢的一首歌:孤单北半球 一次就好&nbsp&nbsp</div>
-           <div style="color: grey" class="_555">向往的目的地:北京 &nbsp&nbsp</div>
-
-
-         <div class="love_who">
-           心中的那个Ta
-           <el-tag class="_1">未婚</el-tag>
-           <el-tag type="success" class="_2">20岁以上</el-tag>
-           <el-tag type="info" class="_3">白羊座</el-tag>
-           <el-tag type="warning" class="_4">175cm</el-tag>
-           <el-tag type="danger" class="_5">不要抽烟</el-tag>
-           <el-tag type="info" class="_6">没有小孩</el-tag>
-         </div>
-       </el-card>
-       <div class="color_tip_01" ></div>
-       <div class="color_tip_02" ></div>
-       <div class="color_tip_03" ></div>
-     </div>
-
-     <div class="right_nav">
-       <el-card class="box-card_03">
-         <div slot="header" class="clearfix_02">
-           <div class="icon_right"><i class="icon iconfont icon-cupid"></i></div>
-           <div class="font_position"><span>推荐</span></div>
-           <div class="the_more"><el-button style="float: right; padding: 3px 0" type="text">更多&raquo</el-button></div>
-         </div>
-         <div class="nav_photo">
-           <div class="pho_01">
-               <img src="https://photo.zastatic.com/images/photo/27215/108857647/1510244464192.jpg?scrop=1&crop=1&cpos=north&w=100&h=100">
-           </div>
-             <div class="pho_02">
-               <img src="https://photo.zastatic.com/images/photo/25435/101736896/12797688545935087.png?scrop=1&crop=1&cpos=north&w=100&h=100">
-             </div>
-             <div class="pho_03">
-               <img src="https://photo.zastatic.com/images/photo/27522/110084062/100776277983864424.png?scrop=1&crop=1&cpos=north&w=100&h=100">
-             </div>
-         </div>
-       </el-card>
-     </div>
-
-     <div id="light_01" class="white_content_01">
-       <div class="the_form_01">
-         <el-form ref="form" :model="form" label-width="80px">
-           <b style="font-size: 20px;color: rebeccapurple">怎样才能联系到您呢?</b>
-           <div class="sank_input">
-           <el-form-item label="姓名">
-             <el-input v-model="form.name"></el-input>
-           </el-form-item>
-           <el-form-item label="电话">
-             <el-input v-model="form.tel"></el-input>
-           </el-form-item>
-           <el-form-item label="QQ">
-             <el-input v-model="form.QQ"></el-input>
-           </el-form-item>
-           <el-form-item label="微信">
-             <el-input v-model="form.Wchat"></el-input>
-           </el-form-item>
-           <el-form-item label="单位">
-             <el-input v-model="form.job"></el-input>
-           </el-form-item>
-             <a href = "javascript:void(0)" onclick = "document.getElementById('light_02').style.display='block'"> <el-button type="primary" plain>主要按钮</el-button></a>
-           </div>
-         </el-form>
-       </div>
-       <!--表单一的关闭按钮-->
-       <div class="the_close_icon">
-       <a href = "javascript:void(0)" onclick = "document.getElementById('light_01').style.display='none'"><i class="icon iconfont icon-guanbi"></i></a>
+        <div v-for="o in 1" :key="o" class="text item">
+          <!--{{'列表内容 '+o}}-->
+        </div>
+      </el-card>
+    </div>
+    <div class="the_photo">
+      <img src="https://photo.zastatic.com/images/photo/376360/1505438644/5549583712300493.png?scrop=1&crop=1&cpos=north&w=200&h=200">
+    </div>
+    <div class="the_header">
+      <div class="the_name" id="app" style="color: purple">
+        <strong>
+          Coco
+        </strong>
       </div>
-     </div>
-     <!--表单一结束，表单二开始-->
-     <div id="light_02" class="white_content_02">
-     <el-card class="box-card">
-       <div slot="header" class="clearfix">
-        <span>妹子信息</span>
-        <el-button style="float: right; padding: 3px 0" type="text"> <a href = "javascript:void(0)" onclick = "document.getElementById('light_02').style.display='none'"><i class="icon iconfont icon-guanbi"></i></a></el-button>
-       </div>
-       <div class="the_names" v-model="tadename">
-         {{'姓名：'+tadename}}
-       </div>
-       <div class="the_names" v-model="telphones">
-         {{'电话：'+telphones}}
-       </div>
-       <div class="the_names" v-model="penguin">
-         {{'QQ：'+penguin}}
-       </div>
-       <div class="the_names" v-model="wechat">
-         {{'微信：'+wechat}}
-       </div>
-       <div class="the_names" v-model="the_mail">
-         {{'邮箱：'+the_mail}}
-       </div>
-     </el-card>
-     </div>
-   </div>
+      <div class="info_simple" style="color: purple">
+        <span>18岁|汉族|东北石油大学|本科|月入3000</span>
+      </div>
+    </div>
+    <div class="the_body">
+      <el-card class="box-card_02">
+        <div class="self_information">
+          个人资料
+          <el-tag class="_1">未婚</el-tag>
+          <el-tag type="success" class="_2">18岁</el-tag>
+          <el-tag type="info" class="_3">天蝎座</el-tag>
+          <el-tag type="warning" class="_4">161cm</el-tag>
+          <el-tag type="danger" class="_5">工作地:湛江遂溪县</el-tag>
+          <el-tag type="info" class="_6">没有小孩</el-tag>
+          <el-tag type="warning" class="_7">体型:一般</el-tag>
+          <el-tag type="danger" class="_8">籍贯:广东湛江</el-tag>
+        </div>
+        <div class="like_do clear">
+          兴趣爱好
+        </div>
+        <div style="color: grey" class="_111">喜欢的美食:山竹&nbsp&nbsp</div>
+        <div style="color: grey" class="_222">喜欢做的事:和喜欢的人在一起 &nbsp&nbsp</div>
+        <div style="color: grey" class="_333">难忘的电影:星际迷航&nbsp&nbsp</div>
+        <div style="color: grey" class="_444">喜欢的一首歌:孤单北半球 一次就好&nbsp&nbsp</div>
+        <div style="color: grey" class="_555">向往的目的地:北京 &nbsp&nbsp</div>
+
+
+        <div class="love_who">
+          心中的那个Ta
+          <el-tag class="_1">未婚</el-tag>
+          <el-tag type="success" class="_2">20岁以上</el-tag>
+          <el-tag type="info" class="_3">白羊座</el-tag>
+          <el-tag type="warning" class="_4">175cm</el-tag>
+          <el-tag type="danger" class="_5">不要抽烟</el-tag>
+          <el-tag type="info" class="_6">没有小孩</el-tag>
+        </div>
+      </el-card>
+      <div class="color_tip_01" ></div>
+      <div class="color_tip_02" ></div>
+      <div class="color_tip_03" ></div>
+    </div>
+
+    <div class="right_nav">
+      <el-card class="box-card_03">
+        <div slot="header" class="clearfix_02">
+          <div class="icon_right"><i class="icon iconfont icon-cupid"></i></div>
+          <div class="font_position"><span>推荐</span></div>
+          <div class="the_more"><el-button style="float: right; padding: 3px 0" type="text">更多&raquo</el-button></div>
+        </div>
+        <div class="nav_photo">
+          <div class="pho_01">
+            <img src="https://photo.zastatic.com/images/photo/27215/108857647/1510244464192.jpg?scrop=1&crop=1&cpos=north&w=100&h=100">
+          </div>
+          <div class="pho_02">
+            <img src="https://photo.zastatic.com/images/photo/25435/101736896/12797688545935087.png?scrop=1&crop=1&cpos=north&w=100&h=100">
+          </div>
+          <div class="pho_03">
+            <img src="https://photo.zastatic.com/images/photo/27522/110084062/100776277983864424.png?scrop=1&crop=1&cpos=north&w=100&h=100">
+          </div>
+        </div>
+      </el-card>
+    </div>
+
+    <div id="light_01" class="white_content_01">
+      <div class="the_form_01">
+        <el-form ref="form" :model="form" label-width="80px">
+          <b style="font-size: 20px;color: rebeccapurple">怎样才能联系到您呢?</b>
+          <div class="sank_input">
+            <el-form-item label="姓名">
+              <el-input v-model="form.name"></el-input>
+            </el-form-item>
+            <el-form-item label="电话">
+              <el-input v-model="form.tel"></el-input>
+            </el-form-item>
+            <el-form-item label="QQ">
+              <el-input v-model="form.QQ"></el-input>
+            </el-form-item>
+            <el-form-item label="微信">
+              <el-input v-model="form.Wechatchat"></el-input>
+            </el-form-item>
+            <el-form-item label="单位">
+              <el-input v-model="form.job"></el-input>
+            </el-form-item>
+            <a href = "javascript:void(0)" onclick = "document.getElementById('light_02').style.display='block'"> <el-button type="primary" plain>主要按钮</el-button></a>
+          </div>
+        </el-form>
+      </div>
+      <!--表单一的关闭按钮-->
+      <div class="the_close_icon">
+        <a href = "javascript:void(0)" onclick = "document.getElementById('light_01').style.display='none'"><i class="icon iconfont icon-guanbi"></i></a>
+      </div>
+    </div>
+    <!--表单一结束，表单二开始-->
+    <div id="light_02" class="white_content_02">
+      <el-card class="box-card">
+        <div slot="header" class="clearfix">
+          <span>妹子信息</span>
+          <el-button style="float: right; padding: 3px 0" type="text"> <a href = "javascript:void(0)" onclick = "document.getElementById('light_02').style.display='none'"><i class="icon iconfont icon-guanbi"></i></a></el-button>
+        </div>
+        <div class="the_names" v-model="card.tadename">
+          {{'姓名：'+card.tadename}}
+        </div>
+        <div class="the_names" v-model="card.telphones">
+          {{'电话：'+card.telphones}}
+        </div>
+        <div class="the_names" v-model="card.penguin">
+          {{'QQ：'+card.penguin}}
+        </div>
+        <div class="the_names" v-model="card.wechat">
+          {{'微信：'+card.wechat}}
+        </div>
+        <div class="the_names" v-model="card.the_mail">
+          {{'邮箱：'+card.the_mail}}
+        </div>
+      </el-card>
+    </div>
+  </div>
 </template>
 <!--<script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/jquery.cookie.js"></script>-->
@@ -208,56 +208,55 @@
       $('.like-icon').attr('data-key', 'on');
     }
   }
-    export default {
-        name: "Date.vue",
-      data() {
-        return {
-          form: {
-            name: '',
-            tel: '',
-            QQ: '',
-            Wchat: '',
-            job: '',
-            //delivery: false,
-            //type: [],
-            //resource: '',
-            //desc: ''
-          },
-          card:{
-              tadename:'',
-              telphones:'',
-              penguin:'',
-              wechat:'',
-              the_mail:'',
-
-          }
+  export default {
+    name: "Date.vue",
+    data() {
+      return {
+        form: {
+          name: '',
+          tel: '',
+          QQ: '',
+          Wechat: '',
+          job: '',
+        },
+        //tadename:'',
+        card:{
+          tadename:'',
+          telphones:'',
+          penguin:'',
+          wechat:'',
+          the_mail:'',
         }
-      },
-      // ajax data
-     /* var:videoUrl = "接口地址",
-
-  $:ajax({
-    type: "get",
-    url: videoUrl,
-    dataType: "json",
-    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-    success: function (data) {
-      var data = data.data;
-      $('.like-num').html(data.praiseCnt);
-    }
-  }),*/
-      created() {
-        axios.get('http://192.168.1.105:8080')
-          .then(response=>{
-            console.log(response);
-            this.zan=response.data;
-          })
-          .catch(error=>{
-            console.log(error);
-            alert('网络错误，不能访问');
-          })
       }
+    },
+    // ajax data
+    /* var:videoUrl = "接口地址",
+
+ $:ajax({
+   type: "get",
+   url: videoUrl,
+   dataType: "json",
+   contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+   success: function (data) {
+     var data = data.data;
+     $('.like-num').html(data.praiseCnt);
+   }
+ }),*/
+    created() {
+      axios.get('http://192.168.1.105:8080')
+        .then(response=>{
+          console.log(response);
+          this.zan=response.data;
+        })
+        .catch(error=>{
+          console.log(error);
+          alert('网络错误，不能访问');
+        })
+    },
+    methods:{
+
     }
+  }
 </script>
 
 <style>
@@ -269,14 +268,14 @@
   li{list-style: none}
   a{text-decoration: none;text-decoration-color: red}
   .clear{display: block;overflow: hidden}
-.the_header{
-  border: 1px ;
-  margin: -10px;
-  height: 120px;
-  width: 1280px;
-  background: -webkit-linear-gradient(left top,#9966FF,#FFCCCC);
+  .the_header{
+    border: 1px ;
+    margin: -10px;
+    height: 120px;
+    width: 1280px;
+    background: -webkit-linear-gradient(left top,#9966FF,#FFCCCC);
 
-}
+  }
   .text {
     font-size: 14px;
   }
@@ -517,12 +516,12 @@
     top: 100px;
   }
   .pho_02{
-  position: absolute;
+    position: absolute;
     left: 20px;
     top: 220px;
   }
   .pho_03{
-position: absolute;
+    position: absolute;
     left: 20px;
     top: 350px;
   }
