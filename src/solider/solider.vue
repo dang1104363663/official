@@ -1,7 +1,6 @@
 <template>
-    <div class="solider" @click="add()">
-          <div>1111</div>
-      <div>1111</div>
+    <div class="solider" >
+
     </div>
 </template>
 
@@ -14,19 +13,11 @@
           }
       },
       methods: {
-        add: function () {
-          var myDate=new Date();
-          console.log(myDate);
-        }
+
       }
     }
 </script>
 
 <style scoped>
-  .solider{
-    width: 400px;
-    height: 1000px;
-    border: 1px solid red;
-  }
 
 </style>
