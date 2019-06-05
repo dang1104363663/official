@@ -1,7 +1,17 @@
 <template>
   <div class="hello">
     <div class="top_image"></div>
-    <div class="silderShow"></div>
+    <div class="silderShow">
+      <el-carousel :interval="4000" type="card"
+                   height="180px"
+                   direction="vertical"
+                   indicator-position="none"
+                >
+        <el-carousel-item v-for="item in 8" :key="item" >
+         <h3 class="medium">{{ item }}</h3>
+        </el-carousel-item>
+      </el-carousel>
+    </div>
     <div class="LoverShow">
       <div class="Love_01">
         <div class="Lover_img"></div>
@@ -199,6 +209,23 @@
     border: 1px solid red;
     height: 600px;
     width: 220px;
+    line-height: 100px;
+  }
+  .el-carousel{
+    width: 440px;
+    height: 400px;
+  }
+  .el-carousel__item h3 {
+    color: #475669;
+    opacity: 0.75;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
   }
   .LoverShow {
     float: left;

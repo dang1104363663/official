@@ -22,7 +22,7 @@
           }
       },  created() {
         let  id=sessionStorage.getItem("id");
-         let   baseurl='http://192.168.1.105:8080/';
+         let   baseurl='http://58.155.47.108:8080/';
         function getUserAccount() {
 
           return axios.get( baseurl+'getTextAndImgById/'+id);
