@@ -163,7 +163,7 @@
       let vue = this;
       axios.all([getUserAccount(), getUserPermissions()])
         .then(axios.spread(function (acct, perms) {
-            console.log(acct)
+            console.log(acct);
           vue.tableData = acct.data.data;
         }));
     },

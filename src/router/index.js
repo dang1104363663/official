@@ -5,6 +5,7 @@ import  articletb  from '@/article/articletb'
 import videotb from '@/video/videotb'
 import  artconcent from '@/article/artconcent'
 import  solider from '@/solider/solider'
+import  Date from '@/date/Date'
 Vue.use(Router);
 
 export default new Router({
@@ -34,6 +35,12 @@ export default new Router({
       name:'solider',
       component:solider
 
-    }
+    },
+    {
+      path:'/date',
+      name:'Date',
+      component:Date
+
+    },
   ]
 })
