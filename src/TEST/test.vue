@@ -1,11 +1,9 @@
 <template>
+  <div  class="test">
     <div>
-     <div>
-       <div>
-        1111
-       </div>
-     </div>
+      11111111
     </div>
+  </div>
 </template>
 
 <script>

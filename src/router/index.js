@@ -6,6 +6,7 @@ import videotb from '@/video/videotb'
 import  artconcent from '@/article/artconcent'
 import  solider from '@/solider/solider'
 import  Date from '@/date/Date'
+import  Test from  '@/TEST/test'
 Vue.use(Router);
 
 export default new Router({
@@ -42,5 +43,12 @@ export default new Router({
       component:Date
 
     },
+    ,
+    {
+      path:'/test',
+      name:'Date',
+      component:Test
+
+    }
   ]
 })
