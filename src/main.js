@@ -6,7 +6,6 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import $ from 'jquery'
-import 'lib-flexible'
 Vue.use(ElementUI);
 Vue.config.productionTip = false;
 

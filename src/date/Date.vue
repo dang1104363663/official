@@ -120,7 +120,7 @@
             <el-form-item label="单位">
               <el-input v-model="form.job"></el-input>
             </el-form-item>
-            <a href = "javascript:void(0)" onclick = "document.getElementById('light_02').style.display='block'"> <el-button type="primary" plain>保存</el-button></a>
+            <a href = "javascript:void(0)" onclick = "document.getElementById('light_02').style.display='block'"> <el-button type="primary" plain>主要按钮</el-button></a>
           </div>
         </el-form>
       </div>
@@ -260,7 +260,6 @@
 </script>
 
 <style>
-
   * {
     margin: 0px;
     padding: 0px;
@@ -273,7 +272,7 @@
     border: 1px ;
     margin: -10px;
     height: 120px;
-
+    width: 1280px;
     background: -webkit-linear-gradient(left top,#9966FF,#FFCCCC);
 
   }
