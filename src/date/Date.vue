@@ -30,16 +30,16 @@
     </div>
     <div class="the_photo">
       <img src="https://photo.zastatic.com/images/photo/376360/1505438644/5549583712300493.png?scrop=1&crop=1&cpos=north&w=200&h=200">
-    </div>
-    <div class="the_header">
+      <div class="info_simple" style="color: purple">
+        <span>18岁|汉族|东北石油大学|本科|月入3000</span>
+      </div>
       <div class="the_name" id="app" style="color: purple">
         <strong>
           Coco
         </strong>
       </div>
-      <div class="info_simple" style="color: purple">
-        <span>18岁|汉族|东北石油大学|本科|月入3000</span>
-      </div>
+    </div>
+    <div class="the_header">
     </div>
     <div class="the_body">
       <el-card class="box-card_02">
@@ -267,10 +267,15 @@
   ul{ list-style: none}
   li{list-style: none}
   a{text-decoration: none;text-decoration-color: red}
+  .the_whole_page{
+    border: 1px solid plum;
+    width: 1280px;
+    margin: 0px auto;
+  }
   .clear{display: block;overflow: hidden}
   .the_header{
     border: 1px ;
-    margin: -10px;
+    margin: 0px auto;
     height: 120px;
     width: 1280px;
     background: -webkit-linear-gradient(left top,#9966FF,#FFCCCC);
@@ -302,6 +307,16 @@
     width: 320px;
     height: 500px;
     border-radius: 10px;
+  }
+  .the_card{
+    position: relative;
+  }
+  .the_photo{
+    position: relative;
+  }
+  .the_body{
+    position: relative;
+    bottom: 100px;
   }
   .the_photo>img{
     position: absolute;
