@@ -1,5 +1,6 @@
 <template>
     <div class="solider" >
+      11111111
     </div>
 </template>
 
